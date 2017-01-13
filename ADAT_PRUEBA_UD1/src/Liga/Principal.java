@@ -16,25 +16,29 @@ public class Principal {
 		while (!salir) { // Estructura que repite el algoritmo del menu principal hasta que se la condicion sea falsa
 			// Se muestra el menu principal
 			System.out.println(".......................... \n" 
-							+  ".  1 Leer de teclado y escribir en fichero  \n"
-							+  ".  2 Leer de fichero y escribir en pantalla \n" 
-							+  ".  3 Leer de fichero y escribir en bbdda \n" 
-							+  ".  7 Salir \n" 
+							+  ".  1 Clasificacion  \n"
+							+  ".  2 Todos los jugadores \n" 
+							+  ".  3 Jugadores por equipo \n" 
+							+  ".  4 Informe salario \n" 
+							+  ".  5 Salir \n" 
 							+  "..........................");
 			try{
 				op = teclado.nextInt(); // Se le da a la variable op el valor del teclado
 				System.out.println("OPCION SELECCIONADA:" + op);
 				switch (op) {
 					case 1:// Insertar Moneda
-						base.Jugadores();
+						base.Clasificacion();
 						break;
 					case 2:// Retornar Monedas
-						
+						base.Jugadores();
 						break;
 					case 3:
-						
+						base.JugadoresPorEquipo();
 						break;
 					case 4:
+						base.salario();
+						break;
+					case 5:
 						salir = true;
 						break;
 					default:// No valido

@@ -5,18 +5,28 @@ public class Jugadores {
 	String apellido;
 	String puesto;
 	int altura;
+	int salario;
 	String equipo;
 	
 	
 	public Jugadores(){}
 	
-	public Jugadores(String nombre , String apellido , String puesto, int altura, String equipo){
+	public Jugadores(String nombre , String apellido , String puesto, int altura, String equipo, int salario){
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.puesto = puesto;
 		this.altura = altura;
 		this.equipo = equipo;
+		this.salario = salario;
 		
+	}
+
+	public int getSalario() {
+		return salario;
+	}
+
+	public void setSalario(int salario) {
+		this.salario = salario;
 	}
 
 	public String getNombre() {
